@@ -6,8 +6,8 @@
 	<div class="collapse" id="suprafata_totala">
 		<div class="card card-block">
 			<div class="d-inline">
-				{!! Form::input('number', 'suprafata_totala_de_la', null, ['class' => 'form-control field', 'placeholder' => 'de la']) !!}
-				{!! Form::input('number', 'suprafata_totala_pina_la', null, ['class' => 'form-control field', 'placeholder' => 'pînă la']) !!}
+				{!! Form::input('number', 'suprafata_totala_de_la', null, ['class' => 'form-control field', 'placeholder' => 'de la', 'style' => 'width: 45%; float: left;']) !!}
+				{!! Form::input('number', 'suprafata_totala_pina_la', null, ['class' => 'form-control field', 'placeholder' => 'pînă la', 'style' => 'width: 45%; float: right;']) !!}
 			</div>
 		</div>
 	</div>

@@ -86,7 +86,7 @@
 						<div class="col-xs-12 col-md-3">
 							<center>
 								<a href="{{ url('/') }}/industrial/{{ $r->id }}" target="_blank">
-									<img src="{{ $url_domain }}/public/images/thumbs2/{{ $r->foto_1 }}" class="img-responsive img-thumbnail">
+									<img src="/img/{{ $r->foto_1 }}?w=175&h=120&fit=crop" class="img-responsive img-thumbnail">
 								</a>
 							</center>
 						</div>

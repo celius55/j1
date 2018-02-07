@@ -27,7 +27,7 @@
           <img src="/public/img/slider/orig_size/3.jpg" class="img-responsive center-block" alt="lesternau">
         </div>
         <div class="item">
-          <img src="/public/img/slider/orig_size/4.jpg" class="img-responsive center-block" alt="lesternau">
+          <img src="/public/img/slider/orig_size/4-1.jpg" class="img-responsive center-block" alt="lesternau">
         </div>
         <div class="item">
           <img src="/public/img/slider/orig_size/5.jpg" class="img-responsive center-block" alt="lesternau">

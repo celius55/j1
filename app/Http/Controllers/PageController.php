@@ -263,6 +263,7 @@ class PageController extends Controller
                     ->orWhere('suprafata_totala', 'like', '%'.$request->search_words.'%')
                     ->orWhere('starea', 'like', '%'.$request->search_words.'%')
                     ->orWhere('parcare', 'like', '%'.$request->search_words.'%')
+                    ->orWhere('strada', 'like', '%'.$request->search_words.'%')
                     ->orWhere('sector', 'like', '%'.$request->search_words.'%');
             }
         }
@@ -364,7 +365,7 @@ class PageController extends Controller
         if (isset($request->numar_de_camere) && $request->numar_de_camere != '') $query->where('numar_de_camere', $request->numar_de_camere);
         if (isset($request->sector) && $request->sector != 'toate') $query->where('sector', $request->sector);
         if (isset($request->parcare) && $request->parcare != 'toate') $query->where('parcare', $request->parcare);
-        if (isset($request->pret_max) && $request->pret_max != '') $query->where('pret', '<', $request->pret_max);
+        if (isset($request->pret_max) && $request->pret_max != '') $query->where('pret', '<=', $request->pret_max);
         if (isset($request->suprafata_totala_max) && $request->suprafata_totala_max != '') $query->where('suprafata_totala', '<', $request->suprafata_totala_max);
         if (isset($request->suprafata_terenului_max) && $request->suprafata_terenului_max != '') $query->where('suprafata_terenului', '<', $request->suprafata_terenului_max);
 
@@ -372,7 +373,7 @@ class PageController extends Controller
         $suprafa_totala_de_la = array();
         if (isset($request->suprafata_totala_de_la) ) $suprafata_totala_de_la[] = $request->suprafata_totala_de_la;
         if (isset($request->suprafata_totala_pina_la)) $suprafata_totala_de_la[] = $request->suprafata_totala_pina_la;
-        if (!empty($suprafa_totala_de_la)) $query->whereBetween('suprafata_totala', [200, 280]);
+        if (!empty($suprafa_totala_de_la)) $query->whereBetween('suprafata_totala', $suprafata_totala_de_la[]);
         // Suprafata terenului Between
         $suprafa_terenului_de_la = array();
         if (isset($request->suprafata_terenului_de_la) ) $suprafata_terenului_de_la[] = $request->suprafata_terenului_de_la;
@@ -488,7 +489,7 @@ class PageController extends Controller
         if (isset($request->necesita_reparatie)) $starea[] = $request->necesita_reparatie;
         if (!empty($starea)) $query->whereIn('starea', $starea);
         // Pretul
-        if (isset($request->pretul_pina_la) && $request->pretul_pina_la != '') $query->where('pret', '<', $request->pretul_pina_la);
+        if (isset($request->pretul_pina_la) && $request->pretul_pina_la != '') $query->where('pret', '<=', $request->pretul_pina_la);
         // Numar de camere
         $numar_de_camere = array();
         if (isset($request->n1_camere)) $numar_de_camere[] = $request->n1_camere;
@@ -513,9 +514,9 @@ class PageController extends Controller
         if (isset($request->varnitkaia)) $planul_cladirii[] = $request->varnitkaia;
         if (!empty($planul_cladirii)) $query->whereIn('planul_cladirii', $planul_cladirii);
         // Suprafata totala
-        if (isset($request->suprafata_totala_pina_la) && $request->suprafata_totala_pina_la != '') $query->where('suprafata_totala', '<', $request->suprafata_totala_pina_la);
+        if (isset($request->suprafata_totala_pina_la) && $request->suprafata_totala_pina_la != '') $query->where('suprafata_totala', '<=', $request->suprafata_totala_pina_la);
         // Suprafata terenului
-        if (isset($request->suprafata_terenului) && $request->suprafata_terenului != '') $query->where('suprafata_terenului', '<', $request->suprafata_terenului);
+        if (isset($request->suprafata_terenului) && $request->suprafata_terenului != '') $query->where('suprafata_terenului', '<=', $request->suprafata_terenului);
         // Nivelul
         $nivelul = array();
         for ($i=1; $i<26; $i++) {
@@ -799,10 +800,16 @@ class PageController extends Controller
 			} else {
 				$acoperiri = false;
 			}
+            
+            $pret_min = $r->pret-2000;
+            $pret_max = $r->pret+2000;
 		}
-//		return var_dump($usi_de_exterior);
+//		return var_dump($usi_de_exterior); 
         
-        $oferte_similare = Apartamente::where('publicat', 1)->where('foto_1', '!=', '')->take(30)->get();
+        $oferte_similare = Apartamente::where('publicat', 1)
+                ->where('foto_1', '!=', '')
+                ->whereBetween('pret', [$pret_min, $pret_max])
+                ->take(30)->get();
         
     	return view('page.apartament', compact(
 			'result', 

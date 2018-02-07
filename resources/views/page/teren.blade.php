@@ -87,13 +87,16 @@
 							@if ($r->canalizare_centrala != 0) <br> &nbsp;&nbsp;&nbsp;&nbsp; - {{ trans('all.canalizare_centrala') }} @endif
                     </li>
 					
-					<li>{{ trans('all.suprafata_terenului') }}: {{ $r->suprafata_terenului }} trans('all.ari')</li>
+					<li>{{ trans('all.suprafata_terenului') }}: {{ $r->suprafata_terenului }} {{ trans('all.ari') }}</li>
 					@if ($r->sector == 'Alte localități')
 						<li>{{ trans('all.localitate') }}: {{ $r->localitate }}</li>
 						@else
 							<li>{{ trans('all.sector') }}: {{ $r->translate(session('applocale'), $r->sector) }}</li>
 					@endif
 				</ul>
+				
+				<h4 class="descrierea">{{ trans('all.descriere') }}:</h4>
+                    {!! $r->{'descrierea_'.session('applocale')} !!}
 			</div>
 		</div>
 	</div>

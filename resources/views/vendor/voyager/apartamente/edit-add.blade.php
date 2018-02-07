@@ -322,12 +322,6 @@
                                 <label for="name">{{ $row->display_name }}</label>
                                 
                                 <h4>Peretii interiori</h4>
-                                <?php $row = $dataTypeRows[57]; ?> 
-                                {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
-                                <label for="name">{{ $row->display_name }}</label>
-                                <?php $row = $dataTypeRows[58]; ?> 
-                                {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
-                                <label for="name">{{ $row->display_name }}</label>
                                 <?php $row = $dataTypeRows[59]; ?> 
                                 {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
                                 <label for="name">{{ $row->display_name }}</label>

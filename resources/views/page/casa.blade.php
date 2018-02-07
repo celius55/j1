@@ -86,6 +86,7 @@
 							<li>{{ trans('all.tipul_cladirii') }}: {{ $r->translate(session('applocale'), $r->tipul_cladirii) }}</li>
 						@endif
 						<li>{{ trans('all.suprafata_totala') }} (m2): {{ $r->suprafata_totala }}</li>
+						<li>{{ trans('all.suprafata_terenului') }}: {{ $r->suprafata_terenului }} {{ trans('all.ari') }}</li>
 						@if ($r->starea != 'cimp_gol')
 							<li>{{ trans('all.starea') }}: {{ $r->translate(session('applocale'), $r->starea) }}</li>
 						@endif
