@@ -17,8 +17,8 @@
             @endforeach
 
             @else
-                <meta property="og:url" content="http://lesternau.md">
-                <meta property="og:title" content="Lesternau.MD - Companie Imobiliară">
+                <meta property="og:url" content="http://diversimobil.md">
+                <meta property="og:title" content="DiversImobil.md - Companie Imobiliară">
                 <meta property="og:image" content="{{ url('/') }}/img/public/img/logo.png">
                 <meta property="og:description" content="Vînzare / Arendă - Apartamente, Case și Vile, Terenuri, Spații Comerciale - Industriale">
         @endif
@@ -117,7 +117,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#"><i class="fa fa-phone"></i> +373 (68) 611 611</a></li>
-            <li><a href="mailto:office@lesternau.md"><i class="fa fa-envelope"></i> office@lesternau.md</a></li>
+            <li><a href="mailto:office@diversimobil.md"><i class="fa fa-envelope"></i> office@diversimobil.md</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/noutati"><i class="fa fa-newspaper-o"></i> {{ trans('all.noutati') }}</a></li>
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-md-2 col-xs-6">
                     <a href="{{ url('/') }}">
-                        <img src="/public/img/logo.png" height="90" class="" alt="logo-lesternau">
+                        <img src="/public/img/other/logo.png" height="90" class="" alt="logo-diversimobil">
                     </a>
                 </div>
 

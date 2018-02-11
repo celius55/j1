@@ -40,7 +40,7 @@
 			<div class="col-xd-12 col-md-12">
 				<div class="col-xs-12 col-md-3 contact-footer">
                         <div class="hidden-xs">
-                            <img src="/public/img/logo.png" class="img-responsive pull-left" alt="footer-logo" style="height: 75px;"> 
+                            <img src="/public/img/other/logo.png" class="img-responsive pull-left" alt="footer-logo" style="height: 75px;"> 
 
                             <div style="margin-left: 100px; margin-top: 20px;">
                                 <!-- AddToAny BEGIN -->
@@ -55,7 +55,7 @@
                                     <script>
                                     var a2a_config = a2a_config || {};
                                     a2a_config.linkname = "Companie Imobiliară";
-                                    a2a_config.linkurl = "http://lesternau.md";
+                                    a2a_config.linkurl = "http://diversimobil.md";
                                     </script>
                                     <script async src="https://static.addtoany.com/menu/page.js"></script>
                                 </div>
@@ -68,7 +68,7 @@
 					<i class="fa fa-phone"></i> 068 611 611 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.l_v') }}: 09:00-18:00 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.simbata') }}: 09:00-13:00 <br>
-					<i class="fa fa-envelope"></i> office@lesternau.md
+					<i class="fa fa-envelope"></i> office@diversimobil.md
 					
 					<ul style="margin-right: -10px; list-style: none; padding-left: 0;">
 						<li>

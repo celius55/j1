@@ -1,6 +1,6 @@
 @extends('head')
 
-@section('title', 'Lesternau Companie Imobiliară - vînzare, chirie, arendă, evaluare, proiectare, imobile (apartamente case terenuri) Chișinău Moldova')
+@section('title', 'DiversImobil Companie Imobiliară - vînzare, chirie, arendă, evaluare, proiectare, imobile (apartamente case terenuri) Chișinău Moldova')
 @section('keywords', 'lesternau, companie imobiliara, vinzare apartamente chisinau, case, vile, terenuri, garaje, spatii comerciale, spatii industriale, ipoteca')
 @section('description', 'Companie imobiliara, vinzare apartamente, case, vile, terenuri Chisinau ')
 

@@ -39,6 +39,7 @@
 			<div class="col-xs-12 col-md-6" style="margin-left: -30px;">
 				
 				@if ( $agent->isMobile() )
+<!--
 				    <style>
                         .swiper-slide {
                             width: 100% !important;
@@ -57,8 +58,39 @@
 								@endforeach
 							@endif
 						</div>
-						<!-- Add Pagination -->
+						 Add Pagination 
 						<div class="swiper-pagination"></div>
+					</div>
+-->
+                    <div class="popup-gallery">
+						@if ( $r->foto_1 != '')
+							<div class="col-xs-12" style="margin-bottom: 20px;"> 
+								<a href="/img/{{ $r->foto_1 }}"><img src="/img/{{ $r->foto_1 }}?w=535&h=320&fit=crop" class=""></a>
+							</div>
+							
+							<div class="images-thumbs-center center-block">
+						@endif
+						
+                                @if ( $r->foto_2 != '')
+                                    <?php $multiple_photo = json_decode($r->foto_2); ?>
+                                    
+                                    <div class="swiper-container slide-images">
+                                        <div class="swiper-wrapper">
+                                            @foreach ($multiple_photo as $m)
+                                                <div class="swiper-slide slide-margin">
+                <!--								<div class="icon-gallery">-->
+                                                    <a href="/img/{{ $m }}" ><img src="/img/{{ $m }}?w=62&h=62&fit=crop"></a>
+                <!--								</div>-->
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                        <!-- Add Arrows -->
+                                    </div>
+
+                                @endif
+							</div>
 					</div>
 				@endif
 
@@ -119,17 +151,17 @@
                     <br>
                     
                     @if ( $r->nume_contact != '' )
-                        <div class="col-xs-4 nume-contact" style="padding-left: 32px;">
-                            <i class="fa fa-user circle-icon"></i>
+                        <div class="nume-contact col-xs-12" style="margin-top: 10px;">
+                            <div class="col-xs-4">
+                                <i class="fa fa-user circle-icon"></i>
+                            </div>
+                            <div class="col-xs-8">
+                                {{ $r->nume_contact }}
+                            </div>
                         </div>
-                        <div class="col-xs-8">
-                            {{ $r->nume_contact }}
-                        </div>
-                        
-                        <br><br><br>
                     @endif
                     
-                    <div class="mobile-number col-xs-12">
+                    <div class="mobile-number col-xs-12" style="margin: 10px 0;">
                         <a href="tel:+{{ $r->mobile }}">
                             <div class="col-xs-4">
                                 <i class="fa fa-phone circle-icon"></i> 
