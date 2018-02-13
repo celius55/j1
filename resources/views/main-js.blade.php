@@ -24,7 +24,7 @@ $(document).ready(function() {
 			$('#top-header').fadeOut();
 //			$('#top-header').slideDown();
 			$('#full-header').addClass('full-header-sticky');
-			$('#full-header').find('img[alt="logo-lesternau"]').hide();
+			$('#full-header').find('img[alt="logo-diversimobil"]').hide();
 			$('.navbar-full-header-class').addClass('navbar-full-header-sticky');
 			$('#full-header').find('img[alt="basket-star"]').attr('src','/public/img/basket-star-2.png');
 			$('ul.top-icon-circle > li').addClass('li-black');
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		} else {
 			$('#top-header').show();
 			$('#full-header').removeClass('full-header-sticky');
-			$('#full-header').find('img[alt="logo-lesternau"]').show();
+			$('#full-header').find('img[alt="logo-diversimobil"]').show();
 			$('.navbar-full-header-class').removeClass('navbar-full-header-sticky');
 			$('#full-header').find('img[alt="basket-star"]').attr('src','/public/img/basket-star.png');
 			$('ul.top-icon-circle > li').removeClass('li-black');

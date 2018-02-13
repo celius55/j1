@@ -99,4 +99,6 @@ Route::get('slider', function() {
 	return view('slider');
 });
 
+Route::get('color-page-apartamente', 'PageController@colorApartamente');
+
 

@@ -49,6 +49,9 @@
     <!-- Shop Slider -->
     <link rel="stylesheet" href="/public/css/shop-slider.css">
     <script src="/public/js/shop-slider.js"></script>
+    <!-- Jscolor Spetrum -->
+    <link href="/public/css/spectrum.css" rel="stylesheet">
+    <script src="/public/js/spectrum.js"></script>
 </head>
 
 <body>
@@ -117,7 +120,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#"><i class="fa fa-phone"></i> +373 (68) 611 611</a></li>
-            <li><a href="mailto:office@diversimobil.md"><i class="fa fa-envelope"></i> office@diversimobil.md</a></li>
+            <li><a href="mailto:ofice@diversimobil.md"><i class="fa fa-envelope"></i> ofice@diversimobil.md</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/noutati"><i class="fa fa-newspaper-o"></i> {{ trans('all.noutati') }}</a></li>

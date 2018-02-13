@@ -64,11 +64,11 @@
 					        
                             <br>
                         </div>
-					<i class="fa fa-building"></i> {{ trans('all.adresa') }} <br>
+<!--					<i class="fa fa-building"></i> {{ trans('all.adresa') }} <br>-->
 					<i class="fa fa-phone"></i> 068 611 611 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.l_v') }}: 09:00-18:00 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.simbata') }}: 09:00-13:00 <br>
-					<i class="fa fa-envelope"></i> office@diversimobil.md
+					<i class="fa fa-envelope"></i> ofice@diversimobil.md
 					
 					<ul style="margin-right: -10px; list-style: none; padding-left: 0;">
 						<li>
@@ -85,7 +85,7 @@
 				</div>
 				<div class="hidden-xs col-md-6">
 <!--					 <iframe width="100%" height="250" frameborder="0" src="https://point.md/ro/map/street/47.035739/28.820477000000018/16/697582934?q=dosoftei%20142&number=142&embed=1"></iframe> -->
-					 <iframe width="100%" height="250" frameborder="0" src="https://point.md/ro/map/47.03922325251075/28.831611871719900/18/5990802566b8f50013786b6c?embed=1"></iframe>
+					 <iframe width="100%" height="250" frameborder="0" src="https://point.md/ru/map/47.0229/28.8353/13?embed=1"></iframe>
 <!--					<div id="map-footer" style="height: 250px;"></div> -->
 				</div>
 				<div class="hidden-xs col-md-3">

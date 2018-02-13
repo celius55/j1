@@ -28,9 +28,9 @@
 				{{ trans('all.oficiu') }}
 			</div>
 			<div class="col-xs-8 contact-right">
-				<i class="fa fa-building"></i> {{ trans('all.adresa') }}<br>
+<!--				<i class="fa fa-building"></i> {{ trans('all.adresa') }}<br>-->
 				<i class="fa fa-phone"></i> +373 (68) 611 611 <br>
-				<i class="fa fa-envelope"></i> office@lesternau.md <br>
+				<i class="fa fa-envelope"></i> ofice@diversimobil.md <br>
 			</div>
 		</div>
 

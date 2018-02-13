@@ -80,7 +80,9 @@
                 <a href="{{ url('/') }}/apartament/{{ $r->id }}" target="_blank">
                     <div class="bg-mobile-house" style="background: url('/img/{{ $r->foto_1 }}?w=400&h=200&fit=crop') center no-repeat;">
                         <div class="bg-mobile-text">
-                            {{ str_limit( $r->{'titlu_'.session('applocale')}, 35 ) }}
+                            {{ str_limit( $r->{'titlu_'.session('applocale')}, 26 ) }}
+                            <br>
+                            {{ $r->strada }}
                             <br>
                             {{ number_format($r->pret, 0, '', ' ') }} €
                         </div>

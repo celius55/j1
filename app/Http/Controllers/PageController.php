@@ -1694,4 +1694,12 @@ class PageController extends Controller
         return $string;
     }
     
+    public function colorApartamente()
+    {
+        $result = Apartamente::where('tip', 'Vînzare')->where('publicat', 1)->orderBy('id', 'DESC')->paginate(20);
+        $search = 'no';
+
+    	return view('page.color-apartamente-vinzare', compact('result', 'search'));
+    }
+    
 }
