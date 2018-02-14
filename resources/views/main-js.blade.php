@@ -30,7 +30,7 @@ $(document).ready(function() {
 			$('ul.top-icon-circle > li').addClass('li-black');
 			$('ul.top-icon-circle > li > a').addClass('black');
 			
-			$('ul.navbar-full-header > li > a').attr('style','color: #000 !important');
+//			$('ul.navbar-full-header > li > a').attr('style','color: #000 !important');
 		} else {
 			$('#top-header').show();
 			$('#full-header').removeClass('full-header-sticky');
@@ -40,7 +40,7 @@ $(document).ready(function() {
 			$('ul.top-icon-circle > li').removeClass('li-black');
 			$('ul.top-icon-circle > li > a').removeClass('black');
 			
-			$('ul.navbar-full-header > li > a').attr('style','color: #fff !important');
+//			$('ul.navbar-full-header > li > a').attr('style','color: #fff !important');
 		}
 	});
 	

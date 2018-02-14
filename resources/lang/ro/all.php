@@ -56,7 +56,7 @@ return [
 	'harta_garaje' => 'Hartă garaje ș parcări',
 	'harta_terenuri' => 'Hartă terenuri',
 	'ascunde_harta' => 'Ascunde harta',
-	'cautare_avansata' => 'Căutare avansată',
+	'cautare_avansata' => '',
 	'rezultatele_cautarii' => 'Rezultatele căutării',
 	
 	'regiunea' => 'Regiunea',

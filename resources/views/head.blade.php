@@ -78,10 +78,6 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 <!-- End facebook share -->
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type="text/javascript">var CHelp;(function(){var d=document,s=d.createElement("script"),c=d.getElementsByTagName("script"),a=c[c.length-1],h=d.location.protocol;s.src="https://cdn.chathelp.ru/js.min/ch-base.js";s.type="text/javascript";s.async=1;a.parentNode.insertBefore(s,a); s.onload = function(){var siteId = "58b95886b74be8c02998703f";CHelp = new ChatHelpJS(siteId);}})()</script>
-<!-- END JIVOSITE CODE -->
-
 @include('main-js')
     <!-- Viber Modal -->
 
@@ -120,7 +116,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#"><i class="fa fa-phone"></i> +373 (68) 611 611</a></li>
-            <li><a href="mailto:ofice@diversimobil.md"><i class="fa fa-envelope"></i> ofice@diversimobil.md</a></li>
+            <li><a href="mailto:oficiu@diversimobil.md"><i class="fa fa-envelope"></i> oficiu@diversimobil.md</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/noutati"><i class="fa fa-newspaper-o"></i> {{ trans('all.noutati') }}</a></li>

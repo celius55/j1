@@ -74,7 +74,7 @@
                                     <div class="offer-content">
                                         <img src="/img/{{ $a->foto_1 }}?w=242&h=150&fit=crop" class="img-responsive center-block first-img" alt="img{{ $a->id }}" style="height: 150px;">
                                         
-                                        <?php $multiple_photo = json_decode($a->foto_2, true); ?> 
+                                        <?php $multiple_photo = json_decode($a->foto_2, true); ?>  
                                         
                                         @if ( !empty($multiple_photo[8]) )
                                         <img src="/img/{{ $multiple_photo[8] }}?w=242&h=150&fit=crop" class="img-responsive center-block second-img" alt="img{{ $a->id }}" style="display: none;"> 

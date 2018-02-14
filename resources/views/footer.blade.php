@@ -68,7 +68,7 @@
 					<i class="fa fa-phone"></i> 068 611 611 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.l_v') }}: 09:00-18:00 <br>
 					<i class="fa fa-clock-o"></i> {{ trans('all.simbata') }}: 09:00-13:00 <br>
-					<i class="fa fa-envelope"></i> ofice@diversimobil.md
+					<i class="fa fa-envelope"></i> oficiu@diversimobil.md
 					
 					<ul style="margin-right: -10px; list-style: none; padding-left: 0;">
 						<li>
