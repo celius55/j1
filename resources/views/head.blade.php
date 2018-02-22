@@ -25,7 +25,9 @@
     <!-- Jquery -->
     <script src="/public/js/jquery-3.1.1.min.js"></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+    <link rel="icon" type="image/png" href="/public/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/public/img/favicon-16x16.png" sizes="16x16" />
     <!-- Swiper 3.4.2 -->
     <link rel="stylesheet" href="/public/swiper-3.4.2/css/swiper.min.css">
     <!-- Style -->
@@ -192,7 +194,10 @@
                                     <a href="#"><i class="fa fa-star"></i></a>
                                 </li> -->
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img src="/public/img/basket-star.png" alt="basket-star" width="20px" style="margin-top: -3px;"> <span class="badge badge-star"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                                        <img src="/public/img/basket-star-2.png" alt="basket-star" width="20px" style="margin-top: -3px;"> 
+                                        <span class="badge badge-star"></span>
+                                    </a>
                                     <div class="dropdown-menu">
                                         <div class="star-box">
                                             @include('star-box')
